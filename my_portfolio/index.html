@@ -1,0 +1,121 @@
+<!-- Updated Portfolio with Profile Image -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Najma Ahmed — Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Najma Ahmed</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Najma Ahmed</span></h1>
+          <p class="lead">Software developer based in London • Oxford University graduate<br> I build delightful, accessible web apps with a focus on performance and design.</p>
+          <p class="tags">JavaScript • React • Node.js • Python • Accessibility</p>
+          <div class="hero-actions">
+            <a class="btn" href="cv.html">View CV</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <!-- Updated profile photo section -->
+        <div class="hero-card">
+          <div class="portrait-image">
+            <img src="images/girl.png" alt="Najma Ahmed profile photo" class="profile-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <h2>Selected work</h2>
+      <div class="grid projects">
+        <article class="card">
+          <h3>Accessibility-first Dashboard</h3>
+          <p>Design and implementation of an analytics dashboard with screen-reader support and keyboard-first navigation.</p>
+          <div class="card-tags">React • Typescript • WCAG</div>
+        </article>
+        <article class="card">
+          <h3>Real-time Collaboration App</h3>
+          <p>Built a real-time collaborative editor using WebSockets and CRDTs for conflict-free editing.</p>
+          <div class="card-tags">Node.js • WebSocket • CRDT</div>
+        </article>
+        <article class="card">
+          <h3>Portfolio CMS</h3>
+          <p>Headless CMS + static-site workflow for fast deploys and easy content editing for non-technical users.</p>
+          <div class="card-tags">Jamstack • Netlify</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact Najma</h2>
+      <p>Prefer email? <a href="mailto:najma.ahmed@example.com">najma.ahmed@example.com</a></p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send message</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+        <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+      </form>
+
+      <small class="disclaimer">This form uses client-side validation only. Replace the submit handler with your backend endpoint or a third-party form service for production.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Najma Ahmed</strong> — Software Developer, London. Oxford University, Class of 20XX.</p>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <style>
+    .profile-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform .3s ease;
+    }
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</body>
+</html>
