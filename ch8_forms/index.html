@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Journal Forms</title>
+</head>
+
+
+
+
+
+
+<body>
+    <h1>Create Journal</h1>
+
+<form action="/api/v1/journals" method="post">
+
+    <!--Text form-->
+
+<label for="main-title">Journal Title</label>    
+
+<input id="main-title" 
+       type="text"
+       name = "user-text" 
+       placeholder = "Enter title">
+
+      <br> 
+
+   <!--text area-->   
+
+<label for="entry">Journal Entry</label>
+<textarea 
+          id="journal-entry"
+          name="journal-entry" 
+          rows="5"
+          cols="30"
+          ></textarea>
+
+<br>
+
+<!--Drop Down -->
+<!--A dropdown allows a user to choose from a predefined options-->
+
+<!--For a drop down the server sets a value whereas for an input the user sets the value-->
+
+<label for="journey-catergory">Journal Category</label>
+<select id="journey-catergory" name="journey-catergory">
+
+    <option value="task">Task</option>
+    <option value="notes">Notes</option>
+    <option value="idea">Idea</option>
+    <option value="goal">Goal</option>
+</select>
+
+<br>  
+
+<!--Buttons-->
+<!--Buttons trigger actions such as submitting a form-->
+<!--Difference between hyperlink and button elements
+hyperlink elements are used to navigate users to a different page whereas, 
+button elements are used to trigger actions like submit a form
+
+e.g <a href= "register.html"> Get started</a> -->
+
+<button type="Submit">Submit</button>
+
+
+
+
+</form>
+
+
+
+
+<!--We are using br because we do not know yet how to use css-->
+
+
+    
+</body>
+</html>
