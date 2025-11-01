@@ -13,6 +13,7 @@
 
 
 <body>
+    <!--Example One-->
     <h1>Create Journal</h1>
 
 <form action="/api/v1/journals" method="post">
@@ -66,16 +67,93 @@ e.g <a href= "register.html"> Get started</a> -->
 
 <button type="Submit">Submit</button>
 
+</form>
+
+<br>
+
+<!--We are using br because we do not know yet how to use css-->
+
+<!---Example Two->
 
 
+<form action="">
+
+  <! Basic Information -->
+  <fieldset>
+    <legend>Basic Information</legend>
+
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text" placeholder="Enter your first name">
+
+    <label for="password">Password:</label>
+    <input id="password" type="password" placeholder="Enter password">
+
+    <label for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email">
+  </fieldset>
+
+  <br>
+
+  <!-- Contact Details -->
+  <fieldset>
+    <legend>Contact Details</legend>
+
+    <label for="phone">Phone Number:</label>
+    <input id="phone" type="tel" placeholder="Enter phone number">
+
+    <br>
+
+    <label for="address">Address:</label>
+    <input id="address" type="text" placeholder="Enter address">
+
+    <br>
+    
+    <label for="country">Country:</label>
+    <select id="country">
+      <option value="">Select country</option>
+      <option value="uk">United Kingdom</option>
+      <option value="usa">United States</option>
+      <option value="canada">Canada</option>
+    </select>
+  </fieldset>
+
+  <br>
+
+  <!-- Preferences -->
+  <fieldset>
+    <legend>Preferences</legend>
+
+    <p>Choose your gender:</p>
+    <input id="male" type="radio" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input id="female" type="radio" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input id="other" type="radio" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <p>Subscribe to our newsletter:</p>
+    <input id="subscribe" type="checkbox" name="subscribe">
+    <label for="subscribe">Yes, sign me up!</label>
+
+  </fieldset>
+
+  <br>
+
+  <!-- Submit button -->
+  <button type="submit">Submit</button>
 
 </form>
 
 
 
 
-<!--We are using br because we do not know yet how to use css-->
 
+
+
+
+    
 
     
 </body>
